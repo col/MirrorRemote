@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MirrorRemote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rz8-NP-2JS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HJ9-Go-6Ye"/>
+                                </connections>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXM-sp-lwG">
+                                <rect key="frame" x="520" y="28" width="60" height="33"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3I9-rc-yc6"/>
+                                    <constraint firstAttribute="height" constant="33" id="XCI-Ix-pl7"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="L58-Fz-QO8"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="G8x-xD-rlH">
+                                <rect key="frame" x="20" y="579" width="560" height="3"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07l-PC-fxX">
+                                <rect key="frame" x="450" y="524" width="150" height="76"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="76" id="1uC-Hk-7as"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="PvV-K5-aCc"/>
+                                </constraints>
+                                <state key="normal" title="Push To Talk"/>
+                                <connections>
+                                    <action selector="recordClicked" destination="BYZ-38-t0r" eventType="touchDown" id="nKU-XT-nFB"/>
+                                    <action selector="stopClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMN-Dx-mHQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XXM-sp-lwG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3LD-bq-0QZ"/>
+                            <constraint firstItem="07l-PC-fxX" firstAttribute="trailing" secondItem="Rz8-NP-2JS" secondAttribute="trailing" id="3VX-xk-JdS"/>
+                            <constraint firstItem="Rz8-NP-2JS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6zC-hU-KrV"/>
+                            <constraint firstItem="Rz8-NP-2JS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Ivi-Tn-kUu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rz8-NP-2JS" secondAttribute="bottom" id="JT1-l1-kwY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="07l-PC-fxX" secondAttribute="trailing" constant="-20" id="ORc-H3-AL8"/>
+                            <constraint firstItem="G8x-xD-rlH" firstAttribute="trailing" secondItem="XXM-sp-lwG" secondAttribute="trailing" id="S6n-10-rBH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XXM-sp-lwG" secondAttribute="trailing" id="Xz0-XF-XUt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G8x-xD-rlH" secondAttribute="bottom" constant="19" id="ace-ab-vlR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="07l-PC-fxX" secondAttribute="bottom" id="mcg-pB-l3z"/>
+                            <constraint firstItem="Rz8-NP-2JS" firstAttribute="centerX" secondItem="G8x-xD-rlH" secondAttribute="centerX" id="nbO-6C-Ip5"/>
+                            <constraint firstItem="Rz8-NP-2JS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xbe-qn-2B2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="XXM-sp-lwG" id="t7Z-0M-x4q"/>
+                        <outlet property="progressView" destination="G8x-xD-rlH" id="mIq-RA-jSb"/>
+                        <outlet property="talkButton" destination="07l-PC-fxX" id="WNJ-so-UX1"/>
+                        <outlet property="webView" destination="Rz8-NP-2JS" id="KiN-U4-EWE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

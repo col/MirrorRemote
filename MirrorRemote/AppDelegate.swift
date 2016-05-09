@@ -41,6 +41,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        let isValidRedirectSignInURL = AIMobileLib.handleOpenURL(url, sourceApplication:sourceApplication)
+        print("url = \(url.absoluteString)")
+        print("sourceApplication = \(sourceApplication)")
+        print("isValidRedirectSignInURL = \(isValidRedirectSignInURL)")
+        return isValidRedirectSignInURL;
+    }
 }
 

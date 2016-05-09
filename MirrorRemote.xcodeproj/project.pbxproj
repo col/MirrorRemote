@@ -13,6 +13,17 @@
 		EFB1C7A81CDF774F0032D5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB1C7A71CDF774F0032D5E3 /* Assets.xcassets */; };
 		EFB1C7AB1CDF774F0032D5E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB1C7A91CDF774F0032D5E3 /* LaunchScreen.storyboard */; };
 		EFB1C7B61CDF774F0032D5E3 /* MirrorRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C7B51CDF774F0032D5E3 /* MirrorRemoteTests.swift */; };
+		EFB1C7C21CDF77910032D5E3 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB1C7C11CDF77910032D5E3 /* LoginWithAmazon.framework */; };
+		EFB1C7C51CDF78E70032D5E3 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB1C7C41CDF78E70032D5E3 /* CoreAudio.framework */; };
+		EFB1C7C71CDF78EF0032D5E3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB1C7C61CDF78EF0032D5E3 /* AudioToolbox.framework */; };
+		EFB1C7C91CDF78F80032D5E3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB1C7C81CDF78F80032D5E3 /* AVFoundation.framework */; };
+		EFB1C7CB1CDF79000032D5E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB1C7CA1CDF79000032D5E3 /* CoreGraphics.framework */; };
+		EFB1C7CD1CDF79090032D5E3 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB1C7CC1CDF79090032D5E3 /* SafariServices.framework */; };
+		EFB1C7CF1CDF79140032D5E3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB1C7CE1CDF79140032D5E3 /* Security.framework */; };
+		EFB1C7D11CDF79370032D5E3 /* AVSUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C7D01CDF79370032D5E3 /* AVSUploader.swift */; };
+		EFB1C7D31CDF793D0032D5E3 /* GetAccessTokenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C7D21CDF793D0032D5E3 /* GetAccessTokenDelegate.swift */; };
+		EFB1C7D51CDF79440032D5E3 /* SimplePCMRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C7D41CDF79440032D5E3 /* SimplePCMRecorder.swift */; };
+		EFB1C7D71CDF79730032D5E3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB1C7D61CDF79730032D5E3 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,18 @@
 		EFB1C7B11CDF774F0032D5E3 /* MirrorRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MirrorRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB1C7B51CDF774F0032D5E3 /* MirrorRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorRemoteTests.swift; sourceTree = "<group>"; };
 		EFB1C7B71CDF774F0032D5E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB1C7C11CDF77910032D5E3 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = Frameworks/LoginWithAmazon.framework; sourceTree = "<group>"; };
+		EFB1C7C31CDF783E0032D5E3 /* MirrorRemote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MirrorRemote-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFB1C7C41CDF78E70032D5E3 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EFB1C7C61CDF78EF0032D5E3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EFB1C7C81CDF78F80032D5E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EFB1C7CA1CDF79000032D5E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFB1C7CC1CDF79090032D5E3 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		EFB1C7CE1CDF79140032D5E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EFB1C7D01CDF79370032D5E3 /* AVSUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSUploader.swift; sourceTree = "<group>"; };
+		EFB1C7D21CDF793D0032D5E3 /* GetAccessTokenDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAccessTokenDelegate.swift; sourceTree = "<group>"; };
+		EFB1C7D41CDF79440032D5E3 /* SimplePCMRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePCMRecorder.swift; sourceTree = "<group>"; };
+		EFB1C7D61CDF79730032D5E3 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +66,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB1C7CF1CDF79140032D5E3 /* Security.framework in Frameworks */,
+				EFB1C7CD1CDF79090032D5E3 /* SafariServices.framework in Frameworks */,
+				EFB1C7CB1CDF79000032D5E3 /* CoreGraphics.framework in Frameworks */,
+				EFB1C7C91CDF78F80032D5E3 /* AVFoundation.framework in Frameworks */,
+				EFB1C7C71CDF78EF0032D5E3 /* AudioToolbox.framework in Frameworks */,
+				EFB1C7C51CDF78E70032D5E3 /* CoreAudio.framework in Frameworks */,
+				EFB1C7C21CDF77910032D5E3 /* LoginWithAmazon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +89,7 @@
 		EFB1C7941CDF774F0032D5E3 = {
 			isa = PBXGroup;
 			children = (
+				EFB1C7C01CDF77760032D5E3 /* Frameworks */,
 				EFB1C79F1CDF774F0032D5E3 /* MirrorRemote */,
 				EFB1C7B41CDF774F0032D5E3 /* MirrorRemoteTests */,
 				EFB1C79E1CDF774F0032D5E3 /* Products */,
@@ -77,6 +108,11 @@
 		EFB1C79F1CDF774F0032D5E3 /* MirrorRemote */ = {
 			isa = PBXGroup;
 			children = (
+				EFB1C7D61CDF79730032D5E3 /* Config.swift */,
+				EFB1C7D41CDF79440032D5E3 /* SimplePCMRecorder.swift */,
+				EFB1C7D21CDF793D0032D5E3 /* GetAccessTokenDelegate.swift */,
+				EFB1C7D01CDF79370032D5E3 /* AVSUploader.swift */,
+				EFB1C7C31CDF783E0032D5E3 /* MirrorRemote-Bridging-Header.h */,
 				EFB1C7A01CDF774F0032D5E3 /* AppDelegate.swift */,
 				EFB1C7A21CDF774F0032D5E3 /* ViewController.swift */,
 				EFB1C7A41CDF774F0032D5E3 /* Main.storyboard */,
@@ -94,6 +130,20 @@
 				EFB1C7B71CDF774F0032D5E3 /* Info.plist */,
 			);
 			path = MirrorRemoteTests;
+			sourceTree = "<group>";
+		};
+		EFB1C7C01CDF77760032D5E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFB1C7CE1CDF79140032D5E3 /* Security.framework */,
+				EFB1C7CC1CDF79090032D5E3 /* SafariServices.framework */,
+				EFB1C7CA1CDF79000032D5E3 /* CoreGraphics.framework */,
+				EFB1C7C81CDF78F80032D5E3 /* AVFoundation.framework */,
+				EFB1C7C61CDF78EF0032D5E3 /* AudioToolbox.framework */,
+				EFB1C7C41CDF78E70032D5E3 /* CoreAudio.framework */,
+				EFB1C7C11CDF77910032D5E3 /* LoginWithAmazon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB1C7D51CDF79440032D5E3 /* SimplePCMRecorder.swift in Sources */,
+				EFB1C7D11CDF79370032D5E3 /* AVSUploader.swift in Sources */,
+				EFB1C7D31CDF793D0032D5E3 /* GetAccessTokenDelegate.swift in Sources */,
 				EFB1C7A31CDF774F0032D5E3 /* ViewController.swift in Sources */,
 				EFB1C7A11CDF774F0032D5E3 /* AppDelegate.swift in Sources */,
+				EFB1C7D71CDF79730032D5E3 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +383,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = MirrorRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.colharris.MirrorRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MirrorRemote/MirrorRemote-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -340,10 +399,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = MirrorRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.colharris.MirrorRemote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MirrorRemote/MirrorRemote-Bridging-Header.h";
 			};
 			name = Release;
 		};
